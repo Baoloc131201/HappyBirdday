@@ -248,7 +248,3 @@ img{
         transform: rotateX(13deg) rotateY(360deg);
     }
 }
-
-#player{
-    display: none;
-}
