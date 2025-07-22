@@ -29,10 +29,13 @@
 		</ol>
 	</div>
 	<audio id="player" controls autoplay loop>
-		<source src="./access/music/music_nhac.mp3" type="audio/mp3">
+		<source src="./access/music/music_nhac.mp3" type="audio/mp3" autoplay>
 	</audio>
 </body>
 	<script>
-	document.getElementById('player').play();
+	window.onload = function() {
+      const audio = document.getElementById("player");
+      audio.play();  // Tự động phát khi trang được tải
+    };
        </script>
 </html>
